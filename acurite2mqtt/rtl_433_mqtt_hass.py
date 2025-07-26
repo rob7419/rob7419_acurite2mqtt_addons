@@ -355,7 +355,7 @@ mappings = {
             "state_class":"total_increasing",
             "name": "Rain Total",
             "unit_of_measurement": "mm",
-            "value_template": "{{ value|float }}"
+            "value_template": "{{ value|float|round(2) }}"
         }
     },
 
@@ -367,7 +367,7 @@ mappings = {
             "state_class":"measurement",
             "name": "Rain Rate",
             "unit_of_measurement": "mm/h",
-            "value_template": "{{ value|float }}"
+            "value_template": "{{ value|float|round(2) }}"
         }
     },
 
@@ -379,7 +379,7 @@ mappings = {
             "state_class":"total_increasing",
             "name": "Rain Total",
             "unit_of_measurement": "in",
-            "value_template": "{{ value|float }}"
+            "value_template": "{{ value|float|round(2) }}"
         }
     },
 
@@ -391,7 +391,7 @@ mappings = {
             "state_class":"measurement",
             "name": "Rain Rate",
             "unit_of_measurement": "in/h",
-            "value_template": "{{ value|float }}"
+            "value_template": "{{ value|float|round(2) }}"
         }
     },
 
